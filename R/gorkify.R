@@ -131,6 +131,49 @@ add_what_arrows <- function(where, what_label_v_offset, what, what_label_cex,
   )
 }
 
+#' #' Draw a Gorkagram.
+#'
+#' A \code{gorkagram} is a graph depicting a value of a variable in
+#' a qualitative semantic differential with labelled polarities. The
+#' depiction of the value is not supposed to be exact, but instead,
+#' in conjunction with it's label, to be evocative of a degree of
+#' proximity to a polarity. This type of diagram was prosed in Gorka,
+#' 2007 (reference below).
+#'
+#' @param from,to,what
+#'    Labels (strings) for LH polarity of the axis, the RH
+#'    polarity, and the variable.
+#' @param where
+#'    A number from 0 to 1 indicating the variable's value
+#'    along the axis.
+#' @param col_from,col_to,col_what
+#'    Label colors (like \code{\link[graphics]{par}}).
+#' @param axis_labels_cex,what_label_cex,what_question_cex
+#'    Text size graphical parameters (like \code{\link[graphics]{par}}).
+#' @param axis_lwd,what_ellipse_lwd
+#'    Line width graphical parameters (like \code{\link[graphics]{par}}).
+#' @param family,axis_labels_font,what_label_font
+#'    Text font graphical parameters (like \code{\link[graphics]{par}}).
+#' @param axis_arrow_size,axis_labels_h_offset,axis_labels_v_offset
+#'    Graphical specification for axis in x and y units (0 to 1)
+#' @param what_label_v_offset,what_arrow_length,what_arrow_head_size,what_arrow_gap_lh,what_arrow_gap_rh,what_question_mark_gap
+#'    Graphical specifications of variable ellipse in x and y units (0 to 1)
+#'
+#' @return a gorkagram, as a side-effect.
+#'
+#' @examples
+#' # Reproduce "Diagram Nine" in Gorka, 2007 :
+#' gorkagram(from = "Peacekeeping", to = "Thermonuclear war",
+#'           what = "Terrorism", where = 35/100)
+#'
+#' @section References:
+#'    Gorka, S. (2007) Content and end-state-based alteration in the
+#'    practice of political violence since the end of cold war: the
+#'    difference between the terrorism of the cold war and the terrorism
+#'    of al Qaeda: the rise of the "transcendental terrorist". PhD
+#'    Dissertation, Corvinus University, 166.
+#'
+#' @export
 gorkagram = function(
   from, to, what, where,
   col_from = "blue",
