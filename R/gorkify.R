@@ -130,3 +130,44 @@ add_what_arrows <- function(where, what_label_v_offset, what, what_label_cex,
     cex = what_question_cex
   )
 }
+
+gorkagram = function(
+  from, to, what, where,
+  col_from = "blue",
+  col_to = "red",
+  col_what = "darkorange2",
+  family = "serif",
+  axis_lwd = 7,
+  axis_arrow_size = 0.03,
+  axis_labels_h_offset = 0.025,
+  axis_labels_v_offset = 0.20,
+  axis_labels_cex = 1.5,
+  axis_labels_font = 2,
+  what_label_v_offset = 0.25,
+  what_label_cex = 1.25,
+  what_label_font = 3,
+  what_arrow_length = 0.03,
+  what_arrow_gap_lh = 0.015,
+  what_arrow_gap_rh = 0.03,
+  what_arrow_head_size = 0.015,
+  what_ellipse_lwd = 1.5,
+  what_question_mark_gap = 0.05,
+  what_question_cex = 1.25) {
+  old_plot_margins = remove_plot_margins()
+  old_plot_region = fix_plot_area()
+  start_plot()
+  add_axis(axis_lwd, axis_arrow_size, axis_labels_h_offset)
+  add_axis_labels(from, to, family, col_from, col_to, axis_labels_cex,
+                  axis_labels_font, axis_labels_h_offset,
+                  axis_labels_v_offset)
+  add_what_label(where, what, family, what_label_font, col_what,
+                 what_label_v_offset, what_label_cex)
+  add_what_ellipse(where, what, what_label_v_offset, what_label_cex,
+                   what_ellipse_lwd)
+  add_what_arrows(where, what_label_v_offset, what, what_label_cex,
+                  what_arrow_length, what_arrow_gap_lh, what_arrow_gap_rh,
+                  what_question_mark_gap, what_arrow_head_size, family,
+                  what_question_cex)
+  reset_plot_dimensions(old_plot_region, old_plot_margins)
+  invisible()
+}
