@@ -2,12 +2,14 @@ Package: gorkagram
 Title: See Polarity Uncertainty with Gorkagrams
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Diogo",
+           family = "Marques",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "do.not@email.me",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: Creates gorkagrams depicting uncertainty of value 
+  in qualitative semantic differentials with labelled 
+  polarities.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
