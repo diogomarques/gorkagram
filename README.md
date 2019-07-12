@@ -25,7 +25,7 @@ The original gorkagram appears as “Diagram Nine” in
 ## Example
 
 To draw a gorkagram, specify the polarities (`from`, `to`), a label for
-the variable of interest (`what`), and it’s placement (`what`) between
+the variable of interest (`what`), and its placement (`where`) between
 polarities, from 0 to 1.
 
 ``` r
