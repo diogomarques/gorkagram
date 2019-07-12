@@ -136,7 +136,7 @@
 #' A \code{gorkagram} is a graph depicting a value of a variable in
 #' a qualitative semantic differential with labelled polarities. The
 #' depiction of the value is not supposed to be exact, but instead,
-#' in conjunction with it's label, to be evocative of a degree of
+#' in conjunction with its label, to be evocative of a degree of
 #' proximity to a polarity. This type of diagram was prosed in Gorka,
 #' 2007 (reference below).
 #'

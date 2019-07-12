@@ -9,33 +9,18 @@
 
 This R package draws gorkagrams.
 
-A `gorkagram` is a graph depicting a value of a variable in a
-qualitative semantic differential with labelled polarities. The
-depiction of the value is not supposed to be exact, but instead, in
-conjunction with it’s label, to be evocative of a degree of proximity to
-a polarity.
+A gorkagram is a graph depicting a value of a variable in a qualitative
+semantic differential with labelled polarities. The depiction of the
+value is not supposed to be exact, but instead, in conjunction with its
+label, to be evocative of a degree of proximity to a polarity.
 
-The original diagram appears as “Diagram Nine” in
+The original gorkagram appears as “Diagram Nine” in
 
 > Gorka, S. (2007) Content and end-state-based alteration in the
 > practice of political violence since the end of cold war: the
 > difference between the terrorism of the cold war and the terrorism of
 > al Qaeda: the rise of the “transcendental terrorist”. PhD
 > Dissertation, Corvinus University, 166.
-
-## Installation
-
-This is a toy package and you should absolutely not install it ever,
-lest you bring upon us the demise of Western Civilization.
-
-If you insist, you can install it with:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("diogomarques/gorkagram")
-```
-
-But please don’t.
 
 ## Example
 
@@ -52,3 +37,21 @@ gorkagram(from = "Spread",
 ```
 
 <img src="man/figures/README-example-1.png" width="100%" />
+
+The seemingly misaligned graphical elements are indeed features of the
+original gorkagram, and not bugs. To adjust graphical elements, use the
+remaining arguments of function `gorkagram`.
+
+## Installation
+
+This is a toy package and you should absolutely not install it ever,
+lest you bring upon us the demise of Western Civilization.
+
+If your goal is, however, to bring such demise upon us, install with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("diogomarques/gorkagram")
+```
+
+But please don’t.
